@@ -538,7 +538,7 @@ def password_reset(request):
             Best regards,
             
             """
-            from_email = 'admin.capitalbk@cepadel.com' # Update with your email
+            from_email = 'americabanking067@gmail.com' # Update with your email
             recipient_list = [user.email]
 
             # Send OTP via Email
