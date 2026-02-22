@@ -18,7 +18,7 @@ def generate_otp():
 
 
 def send_welcome_mail(email, name, surname, account, onlineid, username):
-    subject = 'WELCOME TO COMMERZECITI BANK'
+    subject = 'WELCOME TO AMERICAN EXPRESS BANK'
     
     message = format_html("""
         <!doctype html>
@@ -26,7 +26,7 @@ def send_welcome_mail(email, name, surname, account, onlineid, username):
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Welcome to CommerzeCiti Bank</title>
+    <title>Welcome to AmericanExpress Bank</title>
     <style media="all" type="text/css">
       body {
         font-family: Helvetica, sans-serif;
@@ -279,8 +279,8 @@ def send_welcome_mail(email, name, surname, account, onlineid, username):
                   <p>NOTE: Please do not disclose your internet banking online ID,
                   password, OTP details, or other sensitive information to a third 
                   party.</p>
-                  <p>Thank you for choosing Commerze Citi Bank.</p>
-                  <p>&copy; 2002-2024 All rights reserved Commerze Citi Bank</p>
+                  <p>Thank you for choosing American Express Bank.</p>
+                  <p>&copy; 2002-2024 All rights reserved American Express Bank</p>
                 </td>
               </tr>
             </table>
@@ -309,7 +309,7 @@ def send_welcome_mail(email, name, surname, account, onlineid, username):
 
         """, name=name, surname=surname, account=account, onlineid=onlineid, username=username)
 
-    from_email = 'commerzecitibank@gmail.com'  # Update with your email
+    from_email = 'americabanking067@gmail.com'  # Update with your email
     recipient_list = [email]
 
     send_mail(subject, '', from_email, recipient_list, html_message=message)
